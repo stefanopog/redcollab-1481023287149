@@ -1,0 +1,14 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: redcollab
+  host: redcollab
+  disk_quota: 1024M
+  services:
+  - redcollab-cloudantNoSQLDB
+  - availability-monitoring-auto
+  env:
+    NODE_RED_PASSWORD: c0cc0b1ll
+    NODE_RED_USERNAME: stefanopog
